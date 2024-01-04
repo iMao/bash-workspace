@@ -2,5 +2,5 @@
 
 msg="Hello Bash!"
 
-echo $msg
+echo ${msg}
 
