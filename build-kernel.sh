@@ -71,7 +71,8 @@ fi
 
 
 if [ ! -d ${output_dirname} ]; then
-    echo "Couldn't create output directory"    
+    echo "Couldn't create output directory"
+    exit    
 fi
 
 cd ${repositories_dirname}
@@ -86,8 +87,6 @@ echo "Current branch: ${current_branch_name}"
 
 
 make distclean
-exit
-
 make $defconfig_fname
 exit
 
